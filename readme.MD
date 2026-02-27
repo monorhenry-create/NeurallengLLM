@@ -1,6 +1,6 @@
 # Neural Steganography
 
-Hide secret messages inside normal-looking AI-generated text. You give it a secret and a password, and it spits out a paragraph that looks totally ordinary — but the secret is baked into which words the model chose. Only someone with the password and this tool can pull the message back out.
+Hide secret messages inside normal-looking AI-generated text. You give it a secret and a password, and it spits out a paragraph that looks totally ordinary but the secret is baked into which words the model chose. Only someone with the password and this tool can pull the message back out.
 
 ## How it works
 
