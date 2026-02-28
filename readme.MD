@@ -24,4 +24,4 @@ Pick option 1 to hide a message or option 2 to extract one. It'll walk you throu
 
 Encoding needs the full model (uses GPU if available). Decoding only loads the tokenizer, so it's fast and runs on anything.
 
-Try decoding example text first with password AIGOD using Qwen 2.5 0.5B model. 
+Try decoding example text first with password admin using Qwen 2.5 0.5B model. 
