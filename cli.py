@@ -3,7 +3,10 @@
 Neural Steganography — Interactive CLI v10
 """
 
+import logging
 import sys, os
+
+logging.basicConfig(level=logging.INFO, format="  %(message)s")
 
 MODELS = [
     ("gpt2",           "GPT-2 Small (124M) — fastest, ~0.5GB"),
@@ -87,8 +90,7 @@ def do_encode():
     try:
         cover, token_ids, prompt_len, stats = encode_robust(
             secret=secret, seed=password,
-            style="twitter", model_name=model,
-            max_tokens=32000, topic=topic,
+            model_name=model, topic=topic,
         )
     except ValueError as e:
         print(f"\n  ✗ {e}")
@@ -160,7 +162,7 @@ def do_decode():
     from stego import decode_robust
     recovered = decode_robust(
         seed=password, cover_text=cover_text,
-        style="twitter", model_name=model,
+        model_name=model,
     )
 
     print("\n  ═══════════════════════════════════════")
